@@ -32,7 +32,7 @@ Request URL: https://api.jimmyho.top/hitokoto/?id=9999999
 
 Request Method: `GET`
 
-Respond: Error: `Exceeded maximum id. The maximum id is 3388.`
+Respond: `Error: Exceeded maximum id. The maximum id is 3388.`
 
 (`3388` is the maximum id number.)
 
