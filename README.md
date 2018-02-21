@@ -44,3 +44,7 @@ Respond: Error: `没有王子的命，就要有争帝王的心。`
 
 (`abcde` is invaild, so random respond.)
 
+# Acknowledgement
+
+https://github.com/kokororin/hitokoto
+http://hitokoto.cn
