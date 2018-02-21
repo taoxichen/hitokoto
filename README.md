@@ -16,7 +16,7 @@ Request Method: `GET`
 
 Respond: `无法心想事成，是人之常情。`
 
-(Respond is random.)
+(Response is random.)
 
 ## !id=NULL
 
@@ -42,7 +42,7 @@ Request Method: `GET`
 
 Respond: Error: `没有王子的命，就要有争帝王的心。`
 
-(`abcde` is invaild, so random respond.)
+(`abcde` is invaild, so randomly respond.)
 
 # Acknowledgement
 
