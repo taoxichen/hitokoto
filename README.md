@@ -4,7 +4,9 @@ A simple PHP hitokoto api.
 
 # Feature
 
-- Customize Request ID.
+- Customize ID.
+
+- JavaScript support.
 
 # Example
 
