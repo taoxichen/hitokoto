@@ -14,7 +14,7 @@ A simple PHP hitokoto api.
 
 Normal: Random ID
 
-Option: $id_min ~ $id_max
+Option: `$id_min` ~ `$id_max`
 
 Request URL: https://api.jimmyho.top/hitokoto/?id=1234
 
@@ -26,9 +26,9 @@ Respond: `恕我无礼，我觉得这世上唯一能够信任的人就是我自�
 
 ## $encode
 
-Normal: Text
+Normal: `text`
 
-Option: javascript
+Option: `javascript`
 
 Request URL: https://api.jimmyho.top/hitokoto/?encode=javascript
 
