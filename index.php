@@ -1,25 +1,28 @@
 <?php
 define('AAAZZZ', TRUE);
 header('Content-Type: text/html; charset=UTF-8');
+//开启跨域Ajax支持
 header('Access-Control-Allow-Origin:*');
+//初始化资源文件
 $array = file('./content.php');
+//参数传递
+$encode = $_GET['encode'];
 $id = $_GET['id'];
-$id_min = 1;
 //一言开始行数
-$id_max = 3388;
+$id_min = 1;
 //一言结束行数
+$id_max = 3388;
+//随机 - 判断数字
 if (!$id == NULL && is_numeric($id))
 {
+  //判断大小
   if ($id >= $id_min && $id <= $id_max)
   {
     $number = $id;
   }
   else
   {
-    echo "Error: Exceeded maximum id. ";
-    echo "The maximum id is ";
-    echo $id_max;
-    echo ".";
+    $number = rand($id_min,$id_max);
   }
 }
 else
@@ -27,5 +30,15 @@ else
   $number = rand($id_min,$id_max);
 }
 $string = $array[$number];
-echo trim($string);
+//判断输出类型
+if ($encode == 'javascript')
+{
+  echo 'function jimmyhitokoto(){document.write("';
+  echo trim($string);
+  echo '");}';
+}
+else
+{
+  echo trim($string);
+}
 ?>
