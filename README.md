@@ -6,19 +6,13 @@ A simple PHP hitokoto api.
 
 - Customize Request ID.
 
-# Request example
+# Example
 
-## id=NULL
+## $id
 
-Request URL: https://api.jimmyho.top/hitokoto/
+Normal: Random ID
 
-Request Method: `GET`
-
-Respond: `无法心想事成，是人之常情。`
-
-(Response is random.)
-
-## !id=NULL
+Option: $id_min ~ $id_max
 
 Request URL: https://api.jimmyho.top/hitokoto/?id=1234
 
@@ -28,21 +22,19 @@ Respond: `恕我无礼，我觉得这世上唯一能够信任的人就是我自�
 
 (The id of this sentence is `1234`.)
 
-Request URL: https://api.jimmyho.top/hitokoto/?id=9999999
+## $encode
+
+Normal: Text
+
+Option: javascript
+
+Request URL: https://api.jimmyho.top/hitokoto/?encode=javascript
 
 Request Method: `GET`
 
-Respond: `Error: Exceeded maximum id. The maximum id is 3388.`
+Respond: `function jimmyhitokoto(){document.write("就算是对我抱有敌意的人，也是被某个人深爱着而降生在这个世界上的。");}`
 
-(`3388` is the maximum id number.)
-
-Request URL: https://api.jimmyho.top/hitokoto/?id=abcde
-
-Request Method: `GET`
-
-Respond: Error: `没有王子的命，就要有争帝王的心。`
-
-(`abcde` is invaild, so randomly respond.)
+(You can use it with `<script type="text/javascript" src="https://api.jimmyho.top/hitokoto/?encode=javascript"></script><div id="jimmyhitokoto"><script>jimmyhitokoto()</script></div>`)
 
 # Acknowledgement
 
